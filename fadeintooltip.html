@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+.tooltip{
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    position: relative;
+}
+.tooltip .tooltiptext{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    background-color: black;
+    color: white;
+    width: 120px;
+    z-index: 1;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 5s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 5;
+}
+        </style>
+    </head>
+    <body style="text-align:center;">
+        <h1>fade in opacity code with no arrow</h1>
+        <div class="tooltip">hover me
+            <span class="tooltiptext">tooltiptext</span>
+        </div>
+
+    </body>
+</html>
